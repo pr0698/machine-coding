@@ -20,8 +20,8 @@ function App() {
   }
 
   function calculateEMI() {
-    const r = interest / 100 / 12; // Monthly interest rate
-    const n = duration * 12; // Loan tenure in months
+    const r = interest / 100 / 12; 
+    const n = duration * 12; 
     const monthlyEMI = (principal * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
     setEmi(monthlyEMI.toFixed(2));
   }
