@@ -7,9 +7,9 @@ function App() {
 
   function handleClick() {
     setIsModal(true);
-  }
+  }   
 
-  function handleClose() {
+  function handleCloseDiv() {
     setIsModal(false);
   }
 
@@ -23,10 +23,10 @@ function App() {
 
       {isModal && (
         <>
-          <div className='modal-overlay' onClick={handleClose}></div>
+          <div className='modal-overlay' onClick={handleCloseDiv}></div>
           <div className='modal-container'>
-            <CloseOutlined className='icon-modal' onClick={handleClose} />
-            <p>This is a modal!</p>
+            <CloseOutlined className='icon-modal' onClick={handleCloseDiv} />
+            <p>This is a modal !</p>
           </div>
         </>
       )}
